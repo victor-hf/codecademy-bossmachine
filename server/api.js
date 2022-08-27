@@ -5,10 +5,10 @@ apiRouter.use(express.json());
 
 const minionsRouter = require('./minions.js');
 const ideasRouter = require('./ideas.js');
-// const meetingsRouter = require('./meetings');
+const meetingsRouter = require('./meetings');
 
 apiRouter.use('/minions', minionsRouter);
 apiRouter.use('/ideas', ideasRouter);
-// apiRouter.use('/meetings', meetingsRouter);
+apiRouter.use('/meetings', meetingsRouter);
 
 module.exports = apiRouter;
